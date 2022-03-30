@@ -1,0 +1,152 @@
+.contactPage{
+    position: absolute;
+    top:18%;
+    left:10%;
+    vertical-align: middle;
+    max-height: 90%;
+    width:30%;
+    display: table-cell;
+    h1{
+        font-family:"Coolvetica";
+        color:#F8CD1B;
+        font-size:55px;
+        margin: 5px;
+        &::before{
+           content:"<h1>";
+           color:#F8CD1B;
+           opacity:0.5;
+           font-size: 18px;
+           font-family: "La Bella Aurore";
+           display: block;
+        }
+    
+        &::after{
+            content:"</h1>";
+            color:#F8CD1B;
+            display: block;
+            font-size: 18px;
+            font-family: "La Bella Aurore";
+            opacity: 0.5;
+        }
+    }
+
+    p{
+        font-family: "Helvetica Neue";
+        font-weight: 300;
+        font-size: 12px;
+        color:rgb(255,255,255);
+        max-width:fit-content;
+        animation: pulse 1s;
+        text-align: left;
+        letter-spacing: 1px;
+
+
+        &:nth-of-type(1){
+            animation-delay: 1.1s;
+        }
+    }
+
+
+    form *{
+        position: relative;
+        opacity: 0;
+        animation: fadeInUp 2s 2s ;
+        animation-fill-mode: forwards;
+        font-size:15px;
+
+    }
+    form {
+        width:100%;
+        margin-top:5%;
+        .half{
+            background-color:#115173;
+            width:40%;
+            height:30px;
+            padding:2% 4%;
+            margin-right: 2%;
+            border:none;
+            margin-bottom:1%;
+        }
+
+        .subject{
+            width:90%;
+            height:30px;
+            border:none;
+            background-color:#115173;
+            margin-top:1%;
+            padding:2% 4%;
+            margin-bottom:1%;
+        }
+
+        textarea{
+            width:90%;
+            border:none;
+            background-color:#115173;
+            margin-top:1%;
+            margin-bottom:1%;
+            height: 150px;
+            padding:4% 4%;
+        }
+
+        div{
+         width:98%;
+         text-align: right;
+            button{
+                border:1px solid #F8CD1B;
+                color:#F8CD1B;
+                background-color:transparent;
+                padding:5px 20px;
+                border-radius: 5px;
+            }
+        }
+     
+
+    }
+
+  
+}
+
+#map{
+    height:100vh;
+}
+
+.mapInfo{
+    position: absolute;
+    background-color: black;
+    top:50px;
+    right:30%;
+    z-index:6;
+    width:267px;
+    padding:20px;
+    color:#fff;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    opacity: 0;
+    animation: fadeIn 1s 1.5; 
+    animation-fill-mode: forwards;
+
+    span{
+        font-size:16px;
+        display: block;
+        padding-top:20px;
+        color:#F8CD1B;
+
+    }
+}
+
+.map{
+    background: rgba(0,253,216,0.1);
+    float: right;
+    width:53%;
+    height: 100vh;
+}
+
+.leaflet-container{
+    width:100%;
+    height: 100%;
+    opacity:0;
+    position: relative;
+    animation: backInRight 1s 1.2s;
+    animation-fill-mode: forwards;
+}

@@ -1,4 +1,4 @@
-import { faCss3, faHtml5, faJs, faLaravel, faNodeJs, faPhp, faPython, faReact } from '@fortawesome/free-brands-svg-icons';
+import {  faJs, faLaravel, faNodeJs, faPhp, faPython, faReact } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './about.scss';
 const About = () =>{
@@ -37,8 +37,7 @@ const About = () =>{
                 </div>
                 <div className='face6'>
                <FontAwesomeIcon icon={faJs} color="#E9CC30"/>
-                </div>
-                
+                </div> 
             </div>
         </div>
       </div>    );
