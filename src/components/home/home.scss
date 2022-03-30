@@ -7,7 +7,6 @@
         color:#fff;
         font-size:53px;
         margin:5px;
-    
         &::before{
            content:"<h1>";
            color:#F8CD1B;
@@ -20,7 +19,8 @@
         }
     
         &::after{
-            content:"<h1/>";
+            
+            content:"</h1>";
             color:#F8CD1B;
             font-size: 18px;
             font-family: "La Bella Aurore";

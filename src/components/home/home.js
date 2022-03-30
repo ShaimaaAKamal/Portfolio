@@ -1,4 +1,5 @@
 import {Link} from 'react-router-dom';
+import Logo from '../logo/logo';
 import './home.scss';
 const Home = () =>{
  return(
@@ -12,6 +13,7 @@ const Home = () =>{
         <h2>Full Stack Developer / UI Designer / Freelancer</h2>
     <Link to="/contact" className="contactme"> Contact Me</Link>
        </div>
+       <Logo/>
      </div>
  );
 }

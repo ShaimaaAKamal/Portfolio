@@ -1,0 +1,36 @@
+.logoPic{
+    z-index:0;
+    width:350px;
+    height:350px;
+    position: absolute;
+    top:-25px;
+    right:10%;
+    bottom:0;
+    left:auto;
+    margin:auto;
+    transform: rotate(20deg);
+
+    svg{
+        width: 100%;
+        height: auto;
+        bottom: 0;
+        transform: rotateZ(30degree) !important;
+    }
+    .solidImage{
+    position: absolute;
+    top:auto;
+    right:auto;
+    bottom:auto;
+    left:0;
+    margin: auto;
+    width:100%;
+    opacity:0;
+    transform: rotateZ(30de);
+    z-index: 1;
+    }
+    .svg-container{
+     stroke:#F8CD1B;
+     stroke-width: 10px;
+
+    }
+}
